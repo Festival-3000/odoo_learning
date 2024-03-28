@@ -1,0 +1,116 @@
+[Sales]: it is application to run your sales process from quotation to sales order and deliver and invoice what has been sold.
+
+    1.[Send Quotations]:
+
+        a.[Quotation templates] : In Odoo Sales, salespeople have the ability to create reusable quotation templates for common products or services that the business offers.By using these templates, quotations can be tailored and sent to customers at a much faster pace, without having to create new quotations from scratch every time a sales negotiation occurs.
+            --[Configuration]
+            --[Create quotation templates]
+            --[Use quotation templates]
+    
+        b.[Optional products] : It is a marketing strategy that involves the cross-selling of products along with a core product. The aim is to offer useful and related products to customers, which may result in an increased sale.For instance, if a customer wants to buy a car, they have the choice to order massaging seats, as well, or ignore the offer and simply buy the car.Use the Sales Teams feature to manage several sales teams, departments, or channels, each with their own unique sales processes.
+            --[Optional products on quotations]
+            --[Optional products on quotation templates]
+        
+        c.[Online signatures for order confirmations] : The Odoo Sales application provides customers with the ability to confirm orders, via an online signature, directly on the sales order. Once the sales order is electronically signed by the customer, the salesperson attached to the sales order is instantly notified that the order is confirmed.
+            --[Activate online signatures]
+            --[Order confirmations with online signatures]
+
+        d.[Online payment order confirmation] : The Odoo Sales application provides customers with the ability to confirm orders, via an online payment, directly on a sales order. Once the sales order is electronically paid for by the customer, the salesperson attached to the sales order is instantly notified that the order is confirmed.
+            --[Activate online payments]
+            --[Payment providers]
+            --[Register a payment]
+        
+        e.[Quotation deadlines] : In the Odoo Sales application, it is possible to set deadlines on sales quotations. Doing so encourages customers to act quickly during sales negotiations, for they might fear for missing out on a good deal. As well, deadlines also can also act as protection for a company in case an order has to be fulfilled at a price that is no longer profitable for the business.
+            --[Quotation expiration]
+            --[Quotation template expiration]
+            --[Register a payment]
+        
+        f.[Deliveries and invoices to different addresses] : People and businesses often use separate addresses for billing (invoicing) and shipping (delivery) purposes. With the Odoo Sales app, contacts can have different specified addresses for delivery and invoicing.
+            --[Settings]
+            --[Contact form configuration]
+            --[Address added to quotations]
+        
+        g.[Product variants on quotations and sales orders] : Before getting into detail about how to use product variants on quotations and sales orders, it’s recommended to learn about Product variants in Odoo.Once familiarized with the basics surrounding product variants, the following covers how product variants can be added to quotations and sales orders using the product configurator or order grid entry.
+            --[Settings]
+            --[Product configuration]
+            --[Product configurator]
+            --[Order grid entry]
+        
+        h.[PDF quote builder] : The PDF Quote Builder in Odoo Sales provides the opportunity to send customers a fully customized PDF file for quotes, showcasing the company and products, with various information and design elements, instead of just showing the price and total.The PDF Quote Builder groups header pages, product descriptions, the prices, and footer pages to create a detailed quote. It can also inject dynamic texts in the PDF to personalize the offer for the customer.
+            --[Configuration]
+            --[Add PDF to product]
+            --[PDF quote]
+    
+    2.[Invoicing Method]:
+
+        a.[Invoice based on delivered or ordered quantities] : 
+            Different options for invoicing:
+                The Invoice what is ordered rule is used as the default mode in Odoo Sales, which means customers are invoiced once the sales order is confirmed.
+
+                The Invoice what is delivered rule invoices customers once the delivery is done. This rule is often used for businesses that sell materials, liquids, or food in large quantities. In these cases, the ordered quantity may differ slightly from the delivered quantity, making it preferable to invoice the quantity actually delivered.
+                
+                Being able to have different invoicing options provides more flexibility.
+            --[Invoicing policy features]
+            --[Invoicing policy on product form]
+            --[Impact on sales flow]
+    
+        b.[Down payments] : A down payment is a partial payment made by the buyer when a sales contract is  concluded. This implies both parties (seller and buyer) full commitment to honor the contract.With a down payment, the buyer pays a portion of the total amount owed while agreeing to pay the remaining amount at a later date. In turn, the seller provides goods or services to the buyer after accepting the down payment, trusting that the remaining amount will be paid later on.
+            --[Create invoices : Regular invoice, Down payment (percentage),Down payment (fixed amount)]
+            
+        c.[Pro-forma invoices] : A pro-forma invoice is an abridged or estimated invoice sent in advance of a delivery of goods. It notes the kind and quantity of goods, their value, and other important information, such as weight and transportation charges.
+            --[Configuration]
+            --[Send pro-forma invoice]
+
+        d.[Invoicing based on time and materials] : Invoicing based on time and or materials is typically used when accurately estimating the size of a project isnt possible, or when the requirements of a project may change.This is different from a fixed-price contract, when a customer agrees to pay a specified total for the fulfillment of the contract—no matter what needs to be paid to the employees, sub-contractors, vendors, suppliers, and so on.
+            --[App and settings configuration]
+            --[Service product configuration]            
+            --[Add time spent to sales order]
+            --[Invoice time spent] 
+            --[Expenses configuration] 
+            --[Invoice expenses]
+            --[Purchase configuration]
+            --[Invoice purchase]
+
+        
+        e.[Invoice project milestones] : Invoicing based on project milestones can be used for expensive or large-scale projects. The series of milestones in a project represent a clear sequence of work that will inevitably result in the completion of a project and/or contract.
+            --[Create milestone products]
+            --[Invoice milestones]
+            --[Register a payment]
+        
+        f.[Reinvoice expenses to customers] : While working on a project for a client, employees often have to spend their own money on various expenses related to the project.
+
+        For example, an employee may need to use their own money to pay for a hotel, while they provide an on-site service for a client. As a company, this expense should be reinvoiced to the customer. With Odoo, these kinds of expenses can quickly be reinvoiced to the customer related to the project.
+            --[Expenses application]
+            --[Add expenses to sales orders]
+            --[Reinvoice expense]
+    
+    3.[Products & Pricess]:
+
+        a.[Import products] : Odoo Sales provides a template for importing products with categories and variants, which can be opened and edited with any spreadsheet software (Microsoft Excel, OpenOffice, Google Sheets, etc.).
+        When this spreadsheet is filled out properly, it can be quickly uploaded to the Odoo database. When uploaded, those products are instantly added, accessible, and editable in the product catalog.
+            --[Import template, Customize product import template,Import product template spreadsheet]
+            --[Product images with Google Images : Google Custom Search API within an Odoo database]
+            --[Pricelists, discounts, and formulas : Multiple prices per product,Advanced price rules discounts, formulas]
+            --[Foreign currencies : With Odoo, pricelists can be used to manage prices in a number of foreign currencies. Specifically, Odoo has the ability to work with 167 total currencies.]
+            --[Returns and refunds :  two different ways to process returns : 1.Before invoicing 2. After invoicing]
+            --[Use eWallets and gift cards]
+            --[Discount and loyalty programs]
+
+    4.[Amazon Connector]:
+        a.[Amazon Connector features] : The Amazon Connector synchronizes orders between Amazon and Odoo, which considerably reduces the amount of time spent manually entering Amazon orders (from the Amazon Seller account) into Odoo. It also allows users to accurately keep track of Amazon sales in Odoo.
+            --[Supported features : 
+                    --[Synchronize Amazon to Odoo all confirmed orders both FBA and FBM, and their order items, which include:
+                        product name, description, and quantity
+                        shipping costs for the product
+                        gift wrapping charges]
+
+                    --[Create any missing partner related to an order in Odoo (contact types supported: contact and delivery address).]
+                
+                    --[Notify Amazon of confirmed shipment in Odoo (FBM) to get paid.]
+                    
+                    --[Synchronize (Odoo to Amazon) all available quantities of your products (FBM).]
+                    
+                    --[Support multiple seller accounts.]
+                    
+                    --[Support multiple marketplaces per seller account.]
+                ]

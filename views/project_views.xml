@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+        <!-- Projects creation form -->
+        <record id="view_projects_form" model="ir.ui.view">
+            <field name="name">projects.form</field>
+            <field name="model">projects.name</field>
+            <field name="arch" type="xml">
+                <form string="Projects Form">
+                    <sheet>
+                        <group>
+                            <field name="project_image" widget="image" options='{"size": [300,180]}'/>
+                            <field name="project_name" />
+                            <field name="project_desc" />
+                            <field name="project_state" />
+                            <field name="start_date" />
+                            <field name="deadline_date" />
+                            <field name="date_diff" />
+                            <field name="days_left" />
+                            <field name="created_date" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- List of Projects -->
+        <record id="view_projects_summary_kanban" model="ir.ui.view">
+        <field name="name">projects.view.kanban</field>
+        <field name="model">projects.name</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                        <div class="oe_kanban_content">
+                            <div class="oe_kanban_image" >
+                                <field name="project_image" widget="image" options='{"size": [100,70]}'/>
+                            </div>
+                            <div class="oe_kanban_details" style="margin-top: 10px;">
+                                <div style="font-weight: bold; display:flex; flex-direction:column;">
+                                <span>Project Name: <span t-attf-style="color: black;"><field name="project_name"/></span></span>
+                                <span>Project Description:<span t-attf-style="color: black;"><field name="project_desc"/></span></span> 
+                                <span>Project State: <span t-attf-style="color: black;"><field name="project_state"/></span></span>
+                                <span>Start Date: <span t-attf-style="color: black;"><field name="start_date"/></span></span>
+                                <span>Deadline Date: <span t-attf-style="color: red;"><field name="deadline_date"/></span></span>
+                                <span>Date Differance: <span t-attf-style="color: green;"><field name="date_diff"/></span></span>
+                                <span>Date Left: <span t-attf-style="color: green;"><field name="days_left"/></span></span>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+        </record>
+
+        <!-- action of projects -->
+        <record id="action_view_projects" model="ir.actions.act_window">
+            <field name="name">Projects Details</field>
+            <field name="res_model">projects.name</field>
+            <field name="view_mode">kanban,form</field>
+            <field name="view_id" ref="view_projects_summary_kanban"/>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,55 @@
+[Purchase]: It helps keep track of purchase agreements, quotations, and purchase orders. 
+
+1.[Products]:
+
+    a.[Configure reordering rules] : For certain products, it is necessary to ensure that there is always a minimum amount available on hand at any given time. By adding a reordering rule to a product, it is possible to automate the reordering process so that a purchase order is automatically created whenever the amount on hand falls below a set threshold.
+        --[Configure products for reordering]
+        --[Add a reordering rule to a product]
+        --[Manually trigger reordering rules using the scheduler]
+        --[Manage reordering rules]
+    
+    b.[Temporary reordering rules] : Some businesses require certain products to always have a minimum quantity of stock on-hand at any given time. To avoid stock falling below a certain threshold, companies can create reordering rules in Odoo to automate purchase orders for specific products.
+        --[Trigger temporary reordering rule]
+        --[Check replenishment report]
+        --[Complete purchase order]
+        --[Manage reordering rules]
+
+    c.[Purchase in different units of measure than sales] : When you purchase a product, it may happen that your vendor uses a different unit of measure than you do when you sell it. This can cause confusion between sales and purchase representatives. It is also time-consuming to convert measures manually every time. With Odoo, you can configure your product once and let Odoo handle the conversion.
+
+    examples: You purchase orange juice from an American vendor, and they use gallons. However, your customers are European and use liters.
+        --[Enable units of measure]
+        --[Specify sales and purchase units of measure]
+        --[Create new units of measure and units of measure categories]
+        --[Manage reordering rules]
+
+2.[Manage deals]:
+
+    a.[Use blanket orders to create purchase agreements with vendors] : Blanket orders are long-term purchase agreements between a company and a vendor to deliver products on a recurring basis with predetermined pricing. Using blanket orders are useful when products are always purchased from the same vendor, but in different quantities at different times.
+        --[Create a new blanket order]
+        --[Create a new RFQ from the blanket order]
+        --[Create a new blanket order from an RFQ - Request for Quatation]
+        --[Blanket orders and replenishment]
+    
+    b.[Create alternative requests for quotation for multiple vendors] : Sometimes, companies might want to request offers from multiple vendors at the same time, by inviting those vendors to submit offers for similar goods or services all at once. This helps companies to select the cheapest (and fastest) vendors, depending on their specific business needs.
+        --[Configure purchase agreement settings]
+        --[Create an RFQ]
+        --[Create alternatives to an RFQ]
+        --[Link a new RFQ to existing quotations]
+        --[Compare product lines]
+        --[Cancel (or keep) alternatives]
+
+    c.[Bill control policies]:the bill control policy determines the quantities billed by vendors on every purchase order, for ordered or received quantities. The policy selected in the settings will act as the default value and will be applied to any new product created.
+            --[Configuration - two Bill Control policy options: Ordered quantities and Received quantities.]
+                [Ordered quantities: creates a vendor bill as soon as a purchase order is confirmed. The products and quantities in the purchase order are used to generate a draft bill.
+
+                Received quantities: a bill is created only after part of the total order has been received. The products and quantities received are used to generate a draft bill. An error message will appear if creation of a vendor bill is attempted without receiving anything.]
+            --[3-way matching : Activating 3-way matching ensures that vendor bills are only paid once some or all of the products included in the purchase order have actually been received. ]
+
+    d.[Manage vendor bills]:A vendor bill is an invoice received for products and or services that a company purchases from a vendor. Vendor bills record payables as they arrive from vendors, and can include amounts owed for the goods and or services purchased, sales taxes, freight and delivery charges, and more.
+            --[Bill control policies]
+            --[Create and manage vendor bills on receipts]
+            --[Create and manage vendor bills in Accounting]
+            --[Batch billing]
+
+3.[Advanced - Analyze the performance of your purchases]:If your company regularly purchases products, you have several reasons to track and analyze your performance. The insights gathered can help you to better forecast and plan your future orders. For example, you can assess if your business is dependent on particular vendors, and the data can help you negotiate discounts on prices.
+            --[Generate customized reports - Use filters to select the data you need , Add custom filters,Visualize and explore your data]

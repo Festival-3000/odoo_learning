@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+        <!-- Employee creation form -->
+        <record id="view_employee_form" model="ir.ui.view">
+            <field name="name">employees.form</field>
+            <field name="model">employees.name</field>
+            <field name="arch" type="xml">
+                <form string="Employee Form">
+                    <sheet>
+                        <group>
+                            <field name="emp_image" widget="image" options='{"size": [300,180]}'/>
+                            <field name="emp_name" />
+                            <field name="emp_email" />
+                            <field name="emp_address" />
+                            <field name="emp_contact_no" />
+                            <field name="emp_age" />
+                        </group>
+                        <group>
+                            <field name="emp_gender" />
+                            <field name="emp_date_of_birth" />
+                            <field name="emp_salary" />
+                            <field name="emp_is_active" />
+                            <field name="emp_html" />
+                            <field name="created_date" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- List of Employee -->
+        <record id="bsi_view_employee_tree" model="ir.ui.view">
+            <field name="name">employees.tree</field>
+            <field name="model">employees.name</field>
+            <field name="arch" type="xml">
+                <tree string="Employee List">
+                        <field name="emp_image" widget="image" options='{"size": [100,70]}'/>
+                        <field name="emp_name" />
+                        <field name="emp_email" />
+                        <field name="emp_address" />
+                        <field name="emp_contact_no" />
+                        <field name="emp_age" />
+                        <field name="emp_gender" />
+                        <field name="emp_date_of_birth" />
+                        <field name="emp_salary" />
+                        <field name="emp_is_active" />
+                        <field name="emp_html" />
+                        <field name="created_date" />  
+                </tree>
+            </field>
+        </record>
+
+
+        <!-- action of employee -->
+        <record id="action_view_employee" model="ir.actions.act_window">
+            <field name="name">Employee Details</field>
+            <field name="res_model">employees.name</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="bsi_view_employee_tree"/>
+        </record>
+
+    </data>
+</odoo>

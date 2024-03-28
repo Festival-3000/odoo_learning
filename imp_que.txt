@@ -1,0 +1,121 @@
+[Odoo ERP] - (On Demand Open Object) (Entrerprice Resource Planning)
+It help to design software for manage their business process more effectively.It offers a suite of applications to streamline operations, including (contacts, products, sales , invoicing , inventory,accounting, project management, CRM, and manufacturing).
+
+[Contacts] - It helps to manage or add new users with basic details
+[Products] - It helps to manage or add new products with basic details
+[Sales] - It helps to run your sales process from quatation to sales order and deliver and create invoice what has been sold. 
+[Invoicing] - It is a standalone invoicing app to create invoices, send them to your customers, and manage payments.It can be customizable like regular, down payment, or fixed amount as deposit.
+[Inventory] - It is both an inventory application and a warehouse management system. The app allows users to easily manage lead times, automate replenishment, configure advanced routes.
+[CRM] - [Customer Relationship Management] - It helps you organize your sales activities: track leads, close opportunities and get accurate forecasts.
+
+
+
+The main difference between lot and serial numbers is that lot numbers are applied to a group of products that were manufactured at the same time. Serial numbers are unique numbers associated with specific items.
+
+--- Functional Topic --- 
+13/03/2024 - CRM
+14/03/2024 - Sales
+15/03/2024 - Purchase
+18/03/2024 - Invoice
+19/03/2024 - Inventory
+20/03/2024 - Accounting
+
+Reporting - that app helps to analyze and visualize the data of your records.
+    selecting view - graph view (bar, line, pie charts) ==> to visualize your records data, helping you identify patterns and trends. 
+                     pivot view ==> to aggregate your records data and break it down for analysis. 
+
+Odoo CRM (customer relationship management): it hepls to organize your sales activities : track leads, close opportunities and generate the lead and get accurate forecasts.
+
+
+[sales order : it is  a document that represents customers request tp purchase goods or services from your company.  
+sales : It is entire process from order confirmation to deliver and invoicing.]
+
+[both are used to measure sales performance.
+sales target : focus on predefine goals for sales activities and outcomes.
+invoice target : focus on actual revenue generated through invoiced sales transactions.]
+
+[cost : it refers the price with including manufacturing, purchasing, producing and other costs.
+sales price : It is refers the which we are sold to customers]
+
+[Email Alias : it is unique email address associated with specific record or object in the system. It servers as way to route incoming emails to the appropriate record or module within odoo.
+Odoo will connect via a scheduler and will check emails every 5 minutes by default.
+ex - real mail id = "abc@gmail.com" 
+but you can give email alias as "sales@abc.com"
+they actully end up in you box like real mail id. its like secret code that redirect emails to the right place.
+so insted of giving long name , you can use shorter alias for people to contact you.
+In Odoo, email aliasing is a built-in tool that allows users to extract data from incoming emails and save it to ERP records. This function is an example of automation. We may configure Emails to automatically fetch content, eliminating human work and streamlining the business process.]
+
+
+[Odoo CRM : on each stage we can see color specificition
+Green - Planned activities
+Yellow - Today activities
+Red - Overdue activities]
+
+[CRM Stages :
+1.Lead Generation
+2.Lead qualification
+3.Opportunity management
+4.Pipeline management
+5.Customer Communication
+6.Quatation and Proposal
+7.Closing the deal
+8.Customer retention and upselling
+9.Analylze and reports Generation]
+
+
+[Sales management stages:
+New, qualified, proposition, negotiation,won,lost,cancelled]
+
+[Purchase management stages:
+1.Draft quotation or RFQ(request for quatation)
+2.RFQ sent
+3.RFQ received
+4.Quatation comparision
+5.Purchase order confirmed
+6.Good receipt
+7.Invoice received
+8.Invoice validation
+9.Payment
+10.Close]
+
+[Inventory Steps:
+Stock receipt: bookstore received shipment of books from suppliers containing 100 copies of various titles.
+Quality Control Inspection: it checks the received books are in good condition or not.
+Putaway: assign storage location in warehouse.
+Inventory Adjustments: there are 95 copies are there instead of 100.so adjustments made in system.
+Picking: picks the books from their designated storage location.
+Packing: books packed into shipping box to ensure that they are protected during transit.
+Shipping: books is handed over to the shipping carrier for deliver to customer address.
+Delivery: the shipping carrier deliver the books
+Return Delivery: customer return book due to wrong titles and not want to any more.]
+
+[Putaway rules : used to automate and optimize the process of assigning storage locations to the products upon receipt in the warehouse.
+ex - you operate warehouse that stores various types of electronics products: laptops,phones,tablets.
+you want to define Putaway rules to automate the process of assign storage locations to incoming products based on their categories.]
+
+[Double-entry bookkeeping : one account debited and the other credited. 
+It ensures that all transactions are recorded accurately and consistently and that the accounts always balance.]
+
+[Debit note is a document , the buyer gives that to the seller in case of any damage defects in delivered products. Buyer will return the product the debit note ,once the seller accepts it , 
+they create a credit note and reverse refund the amount.]
+
+[Journals are important and essential documents that contain important information on the Transaction of a company arranged with respect to the date on which the transactions are carried out. Every single detail on the transactions includes the Date, Accounts names, Amounts, and whether they are registered as Debit or 
+Credit.]
+
+[Journal Items : single journal entry, To track individual entries for particular one transaction.
+ex - 1 entry for debit and credit
+Journal Entries : containing several lines, To track debited money and aslo credit money in one entry and it is also connected with journal items.
+ex - 2 entry for specific one entry]
+
+[journal types : you can create Sales,Purchase,Cash and Bank,
+and Miscellaneous journals.]
+
+[general ledger : it consist all finacial transactions.
+partner ledger : it consist specific partners finacial transactions.]
+
+[fiscal year : this needs last date of year
+chart of accounts : the list of all the accounts used to record financial transactions in the general ledger 
+of an organization.] 
+
+[budgets : it is used to plan and track finacial goals and targets for specific accounts or groups of account over a period. it is helps to business compare actual finacial performance against planned targets,enabling better finacial management and decision 
+making.]

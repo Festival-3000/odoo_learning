@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Client creation form -->
+        <record id="view_client_form" model="ir.ui.view">
+            <field name="name">clients.form</field>
+            <field name="model">clients.name</field>
+            <field name="arch" type="xml">
+                <form string="Client Form">
+                    <sheet>
+                        <group>
+                            <field name="client_image" widget="image" options='{"size": [300,180]}'/>
+                            <field name="client_name" />
+                            <field name="client_email" />
+                            <field name="client_address" />
+                            <field name="client_contact_no" />
+                            <field name="client_age" />
+                        </group>
+                        <group>
+                            <field name="client_gender" />
+                            <field name="client_date_of_birth" />
+                            <field name="client_amount" />
+                            <field name="client_is_active" />
+                            <field name="client_html" />
+                            <field name="created_date" /> 
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- List of client -->
+        <record id="bsi_view_client_tree" model="ir.ui.view">
+            <field name="name">clients.tree</field>
+            <field name="model">clients.name</field>
+            <field name="arch" type="xml">
+                <tree string="Client List"> 
+                        <field name="client_image" widget="image" options='{"size": [100,70]}'/>
+                        <field name="client_name" />
+                        <field name="client_email" />
+                        <field name="client_address" />
+                        <field name="client_contact_no" />
+                        <field name="client_age" />
+                        <field name="client_gender" />
+                        <field name="client_date_of_birth" />
+                        <field name="client_amount" />
+                        <field name="client_is_active" />
+                        <field name="client_html" />
+                        <field name="created_date" /> 
+                </tree>
+            </field>
+        </record>
+
+
+        <!-- action of client -->
+        <record id="action_view_client" model="ir.actions.act_window">
+            <field name="name">Client Details</field>
+            <field name="res_model">clients.name</field>
+            <field name="view_mode">form,tree</field>
+            <field name="view_id" ref="bsi_view_client_tree"/>
+        </record>
+
+    </data>
+</odoo>

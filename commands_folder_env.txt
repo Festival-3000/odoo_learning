@@ -1,0 +1,77 @@
+env activate : cd /home/btst/BSI_Workspace/odoo/v15/odoo
+source env_Odoov15/bin/activate
+
+cmd for run not auto reload server: python3.8 ./odoo-bin --addons=/home/btst/BSI_Workspace/odoo/v15/odoo/addons,/home/btst/BSI_Workspace/odoo/v15/Project/custom_addons -d student_v15 -u employee_management_system
+
+cmd for run with auto reload server: python3.8 ./odoo-bin --addons=/home/btst/BSI_Workspace/odoo/v15/odoo/addons,/home/btst/BSI_Workspace/odoo/v15/Project/custom_addons --dev=all -d student_v15 -u employee_management_system
+
+change port no. cmd : python3.8 ./odoo-bin [--http-port=8000] --addons=/home/btst/BSI_Workspace/odoo/v15/odoo/addons,/home/btst/BSI_Workspace/odoo/v15/Project/custom_addons -d student_v15 -u employee_management_system
+or 
+python3.8 ./odoo-bin [-p 8001] --addons=/home/btst/BSI_Workspace/odoo/v15/odoo/addons,/home/btst/BSI_Workspace/odoo/v15/Project/custom_addons -d student_v15 -u employee_management_system
+
+kill the port no. that already working :  
+method 1 :
+    sudo lsof -i :8069 
+    sudo kill PID
+method 2 : 
+    ps -ef  
+    kill -9 3747
+
+odoo runbot
+
+localhost:8069
+
+Projects Folder : /home/btst/BSI_Workspace/odoo/v15/Project
+
+files:
+    __init__.py - its executes first when we call or run a model and load the required things
+
+    __manifest__.py - it contains all the descriptions of a module inside a single dictionary.
+                      Manifest file is placed directly inside the main module folder of the Odoo App. 
+                      We can add a new module from this file.
+    
+folders:
+    1.models - [.py (orm)] it is logical structure of a database and how data is stored, organized, and manipulated.they represents database tables and handle data manipulation and business logic.
+
+        e.x. - employees.py :
+
+        from odoo import fields, models
+        class EmployeesDetail(models.Model):
+            _name = 'employees.name' #table name
+            _description = 'Employees Name' #table description
+        std_name = fields.Char(default="Employee",string="Employee Name") #table columns
+
+    2.controller - [.py] it is used to configure the Front-end modules under 'Website.'.These Front-end modules are integrated with Back-end modules. Using Controllers, you can specify the URL to link the Webpages.
+    
+    3.data - [security]  Include xml files that define and load the data into database, such as intial records, configurations and demo folder.
+
+    4.views - [xml] to show business logic to user interface.
+
+    5.wizard - [pop up incudes xml and .py] to create interactive sessions to enhance user experience.
+
+    6.security - [security/ir.model.access.csv] file that manage all the access control rules as per users or groups.
+        e.x. - [ir.model.access.csv] :
+            id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+            student_management_system.access_student_name,access_student_name,student_management_system.model_student_name,base.group_user,1,1,1,1
+    
+    7.report - [reports] define templates and data source for generating documents or data summaries such as PDF reports or Excel exports.
+
+    8.static - [.js and images] Store static assets like images, js files, css or other resouces used by app's frontend.
+
+
+
+Install virtualenv:
+Step 1 : Install pip first
+    sudo apt-get install python3-pip
+
+Step 2 : Then install virtualenv using pip3
+    sudo pip3 install virtualenv 
+
+Step 3 : Now create a virtual environment
+    virtualenv venv 
+
+Step 4 : Active your virtual environment:
+    source venv/bin/activate
+
+Step 5 : To deactivate:
+    deactivate

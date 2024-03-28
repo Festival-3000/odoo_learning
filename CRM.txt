@@ -1,0 +1,75 @@
+[CRM]: It helps you organize your sales activities: track leads, close opportunities and get accurate forecasts. Keep opportunities organized with the pipeline and manage your day-to-day activities with meetings and next activities.
+
+1.[Organize the pipeline]:
+
+    a.[Manage lost opportunities] : Not all opportunities result in successful sales.In order to keep the pipeline up to date, lost opportunities need to be identified. Specifying the reason why an opportunity was lost provides additional insight that can prove useful for future opportunities.
+        --[Mark a lead as lost]
+        --[create/edit lost reasons]
+        --[Retrieve lost opportunities]
+        --[Restore lost opportunities]
+        --[Restore multiple opportunities at once]
+
+    b.[Multiple sales teams] : Use the Sales Teams feature to manage several sales teams, departments, or channels, each with their own unique sales processes.
+        --[Create a new sales team]
+        --[Add members to a sales team]
+        --[Sales team dashboard]
+
+2.[Acquire leads] :
+
+   a.[Convert leads into opportunities] : Leads act as qualifying steps before an opportunity is created. This provides additional time before a potential opportunity is assigned to a sales person.
+        --[Configuration]
+        --[Convert a lead into an opportunity]
+        --[Merge leads and opportunities]
+
+    b.[Generate leads/opportunities] : Two key ways to generate new leads or opportunities i.e. email aliases and website contact forms.Odoo automatically creates leads in your CRM whenever someone sends a message to a Sales Team email alias or fills out a contact form on your website.
+        --[Configure email aliases]
+        --[Use Contact Forms on your website]
+        --[Customize Contact Forms]
+        --[Edit Contact Form fields]
+    
+    c.[Create and send quotations] : Once a qualified lead has been converted into an opportunity, the next step is to create and deliver a quotation. This process can be easily handled through Odoo’s CRM application.
+        --[Create a new quotation]
+        --[Preview and send quotation]
+        --[Mark an opportunity won or lost]
+    
+    d.[Lead mining] : Lead mining is a feature that allows CRM users to generate new leads directly into their Odoo database. To ensure lead qualification, lead mining output is determined by a variety of filtering criteria, such as the country, the company size, and the industry.
+        --[Configuration]
+        --[Generate leads]
+        --[Pricing]
+    
+3.[Assign and track leads] :
+
+    a.[Track your prospects visits] : Tracking your website pages will give you much more information about the interests of your website visitors.Every tracked page they visit will be recorded on your lead/opportunity if they use the contact form on your website.
+        --[Configuration]
+        --[Track a webpage]
+        --[See visited pages in your leads/opportunities]
+    
+    b.[Assign leads with predictive lead scoring] : The Odoo CRM app can automatically assign leads opportunities to sales teams and salespeople. A standard practice is to assign leads based on the probability of winning each lead. Companies can prioritize the leads that are more likely to result in successful deals by quickly assigning them to the appropriate salespeople.Odoo automatically calculates the probability of winning each lead using a method called predictive lead scoring.
+        --[Predictive lead scoring]
+        --[Configuration]
+        --[Change the probability manually]
+        --[Assign leads based on probability]
+
+    c.[Unattended leads report] : Tracking your website pages will give you much more information about the interests of your website visitors.Every tracked page they visit will be recorded on your lead/opportunity if they use the contact form on your website.
+        --[Create an unattended leads report]
+        --[View results]
+        --[See visited pages in your leads/opportunities]
+
+4.[Analyze performance] :
+
+    a.[Pipeline Analysis] : The CRM app manages the sales pipeline as leads opportunities move from stage to stage, origination to sale (Won) or archival (Lost).After organizing the pipeline, use the search options and reports available on the Pipeline Analysis page to gain insight into the effectiveness of the pipeline and its users.To access the Pipeline Analysis page, go to CRM app ‣ Reporting ‣ Pipeline.
+        --[Navigate the pipeline analysis page]
+        --[View options]
+        --[Create reports - Win/Loss reports]
+        --[Save and share reports]
+
+5.[Optimize your Day-to-Day work] :
+
+    a.[Enrich your contacts base with Partner Autocomplete] : Partner Autocomplete helps you to enrich your contacts database with corporate data. Select one of the companies suggested in the dropdown, and quickly get all the information you need.
+        --[Configuration]
+        --[Enrich your contacts with corporate data]
+        --[Pricing]
+    
+    b.[How to motivate and reward my salespeople?] : Challenging your employees to reach specific targets with goals and rewards is an excellent way to reinforce good habits and improve your salespeople productivity. The Gamification module gives you simple and creative ways to motivate and evaluate your employees with real-time recognition and badges inspired by game mechanics.
+        --[Configuration]
+        --[Create a challenge - Set up goals, Set up rewards]

@@ -1,0 +1,13 @@
+Required :
+[Use case diagram
+class diagram
+DFD diagram
+ER diagram
+flow chart]
+
+optional:
+[Activity diagram
+Sequence diagram
+State diagram]
+
+Abstract :  

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+   
+    <!-- Main Menu -->
+    <menuitem
+            id="menu_root"
+            name="Employee Management System"
+            sequence="10"/>
+`   
+    <!-- Employee Menu -->
+    <menuitem
+        id="employee_details"
+        name="Employee"
+        parent="menu_root"
+        sequence="20" />
+
+
+
+    <!-- Employee Sub menu -->
+    <menuitem
+        id="menu_employee_details"
+        name="Employee Details"
+        parent="employee_details"
+        action="action_view_employee"
+        sequence="30" />
+    
+
+    <!-- Client Menu -->
+    <menuitem
+        id="client_details"
+        name="Client"
+        parent="menu_root"
+        sequence="20" />
+
+    <!-- Client Sub menu -->
+    <menuitem
+        id="menu_client_details"
+        name="Client Details"
+        parent="client_details"
+        action="action_view_client"
+        sequence="30" />
+    
+    <!-- Projects Menu -->
+    <menuitem
+        id="projects_details"
+        name="Projects"
+        parent="menu_root"
+        sequence="20" />
+
+    <!-- Projects Sub menu -->
+    <menuitem
+        id="menu_projects_details"
+        name="Projects Details"
+        parent="projects_details"
+        action="action_view_projects"
+        sequence="30" />
+
+    </data>
+</odoo>
